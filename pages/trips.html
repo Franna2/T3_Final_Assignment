@@ -12,8 +12,30 @@
     $(document).ready(function() {
       // Change the text of <h1> element on document ready
       $('#cruise-name').text("Welcome to Your Cruise Name");
+
+      // Add event listener to trip options
+      $('.trip-option').click(function() {
+        // Remove active class from all trip options
+        $('.trip-option').removeClass('active');
+
+        // Add active class to the clicked trip option
+        $(this).addClass('active');
+
+        // Show the hidden "Purchase Ticket" button
+        $('.purchase-ticket').hide();
+        $(this).find('.purchase-ticket').show();
+      });
     });
   </script>
+  <style>
+    .trip-option.active {
+      background-color: lightblue;
+    }
+
+    .purchase-ticket {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <!-- Bootstrap header slider -->
@@ -37,6 +59,30 @@
   <!-- Live weather data from Open Weather API -->
   <div id="weather-data">
     <!-- Insert your weather data here -->
+  </div>
+
+  <!-- Filter for trips -->
+  <div id="trip-filter">
+    <!-- Insert your trip filter code here -->
+  </div>
+
+  <!-- Trip options -->
+  <div id="trip-options">
+    <div class="trip-option active">
+      <h3>Trip 1</h3>
+      <p>Additional information about Trip 1.</p>
+      <button class="purchase-ticket btn btn-primary">Purchase Ticket</button>
+    </div>
+    <div class="trip-option">
+      <h3>Trip 2</h3>
+      <p>Additional information about Trip 2.</p>
+      <button class="purchase-ticket btn btn-primary">Purchase Ticket</button>
+    </div>
+    <div class="trip-option">
+      <h3>Trip 3</h3>
+      <p>Additional information about Trip 3.</p>
+      <button class="purchase-ticket btn btn-primary">Purchase Ticket</button>
+    </div>
   </div>
 
   <!-- Accordion sections -->
