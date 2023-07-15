@@ -1,0 +1,65 @@
+header {
+    background-color: #0066FF;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+#header-slider .carousel-inner .carousel-item img {
+    width: 100%;
+  }
+  
+  #company-name {
+    text-align: center;
+    margin-top: 20px;
+    color: #0066FF;
+  }
+  
+  #weather-data {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+  }
+  
+  #accordion .card {
+    margin-bottom: 10px;
+  }
+  
+  #accordion .card:nth-child(1) .card-header {
+    background-color: #0066FF;
+  }
+  
+  #accordion .card:nth-child(1) .btn-link {
+    color: #FFFFFF;
+  }
+  
+  #accordion .card:nth-child(2) .card-header {
+    background-color: #8A8A8A;
+  }
+  
+  #accordion .card:nth-child(2) .btn-link {
+    color: #FFFFFF;
+  }
+  
+  #accordion .card:nth-child(3) .card-header {
+    background-color: #B5B2D3;
+  }
+  
+  #accordion .card:nth-child(3) .btn-link {
+    color: #FFFFFF;
+  }
+  
