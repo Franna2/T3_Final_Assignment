@@ -3,6 +3,10 @@
 <head>
   <title>Trip Filter</title>
   <link rel="stylesheet" href="/css/trips.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/Script.js"></script>
 </head>
 <body>
   <header>
@@ -29,9 +33,20 @@
     <!-- Dynamic trip item/card content will be loaded here -->
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="/js/Script.js"></script>
+  <main>
+    <div id="tripFilter">
+      <button class="filterBtn" data-filter="all">All Destinations</button>
+      <button class="filterBtn" data-filter="short">Short Duration Trips</button>
+      <button class="filterBtn" data-filter="long">Long Duration Trips</button>
+      <button class="filterBtn" data-filter="single">Single Destination</button>
+      <button class="filterBtn" data-filter="multi">Multi Destinations</button>
+      <button class="filterBtn" data-filter="round">Round Trips</button>
+      <button class="filterBtn" data-filter="rowBoat">Row Boat Special</button>
+    </div>
+    <div id="tripOptions" class="d-flex flex-wrap">
+      <!-- Trip options will be populated dynamically using JS -->
+    </div>
+  </main>
 </body>
 </html>
+

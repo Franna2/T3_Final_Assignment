@@ -64,4 +64,19 @@ header {
   #purchase-ticket {
     display: none;
   }
-  
+
+.filterBtn {
+  margin: 5px;
+}
+
+.tripCard {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+.activeTrip {
+  background-color: #f0f0f0;
+}
+
