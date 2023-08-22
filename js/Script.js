@@ -135,3 +135,20 @@ function showSuccessMessage() {
   alert("Successful Purchase");
 }
 
+const apiKey = 'YOhttps://api.openweathermap.org/data/3.0/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid={API key}'; // Replace with your actual API key
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=YOUR_CITY_NAME&appid=${apiKey}&units=metric`;
+
+async function fetchWeather() {
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        document.getElementById('location').textContent = data.name;
+        document.getElementById('temperature').textContent = data.main.temp;
+        document.getElementById('weather').textContent = data.weather[0].description;
+    } catch (error) {
+        console.error('Error fetching weather data:', error);
+    }
+}
+
+fetchWeather();
